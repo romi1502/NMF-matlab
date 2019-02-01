@@ -41,7 +41,7 @@ def sparse_NMF(V, R=3, n_iter=50, init_W=None, init_H=None, alternating_update=T
     else:
         H = np.random.rand(R,N).astype(V.dtype)
 
-    if init_H is not None:
+    if init_W is not None:
         W = init_W;
         R = init_W.shape[1]
     else:
